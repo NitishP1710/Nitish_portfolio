@@ -4,7 +4,7 @@ const Navbar = ({ activePage, setActivePage }) => {
   const navItems = ["About", "Skills", "Projects", "Contact"];
   return (
     <nav
-      className="fixed bottom-0 left-0 w-full bg-onyx/75 backdrop-blur-[10px] border border-jet rounded-t-xl md:rounded-t-[20px] shadow-[var(--shadow-2)] z-[5]
+      className="fixed bottom-0 left-0 w-full bg-onyx/75 backdrop-blur-[10px] border border-jet rounded-t-xl md:rounded-t-[20px] shadow-(--shadow-2) z-5
       lg:absolute lg:bottom-auto lg:top-0 lg:left-auto lg:right-0 lg:w-max lg:rounded-none lg:rounded-br-[20px] lg:px-5 lg:shadow-none"
     >
       <ul className="flex flex-wrap justify-center items-center px-2.5 lg:gap-8 lg:px-5">
