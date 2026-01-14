@@ -1,13 +1,14 @@
-import { aboutText,services } from "../data/portfolioData";
+import { aboutText, services } from '../data/portfolioData';
 
-const About=({isActive})=>{
-    if(!isActive) return null;
-    return(
-      <article className="animate-fade">
+const About = ({ isActive }) => {
+  if (!isActive) return null;
+
+  return (
+    <article className="animate-fade">
       <header>
         <h2 className="text-white-2 text-2xl md:text-[32px] font-semibold capitalize relative pb-2 md:pb-4 mb-4 md:mb-5">
           About me
-          <span className="absolute bottom-0 left-0 w-7.5 md:w-10 h-0.75 md:h-1.25 bg-linear-to-r from-orange-yellow to-vegas-gold rounded-full" />
+          <span className="absolute bottom-0 left-0 w-[30px] md:w-10 h-[3px] md:h-[5px] bg-gradient-to-r from-orange-yellow to-vegas-gold rounded-full" />
         </h2>
       </header>
 
@@ -38,8 +39,8 @@ const About=({isActive})=>{
 };
 
 const ServiceCard = ({ icon, title, description }) => (
-  <li className="relative bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] p-5 md:p-8 rounded-[14px] shadow-(--shadow-2) z-1 flex flex-col md:flex-row items-start gap-4 md:gap-5">
-    <span className="absolute inset-px bg-gradient-jet rounded-[inherit] -z-1" />
+  <li className="relative bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] p-5 md:p-8 rounded-[14px] shadow-[var(--shadow-2)] z-[1] flex flex-col md:flex-row items-start gap-4 md:gap-5">
+    <span className="absolute inset-[1px] bg-gradient-jet rounded-[inherit] -z-[1]" />
     <div className="mx-auto md:mx-0 md:mt-1">
       <img src={icon} alt={title} className="w-10" />
     </div>
@@ -55,3 +56,4 @@ const ServiceCard = ({ icon, title, description }) => (
 );
 
 export default About;
+

@@ -194,3 +194,6 @@ export const projects = [
   }
 ];
 
+export const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.576189831728!2d73.84825867428687!3d18.45754208262385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2sSCTR'S%20Pune%20Institute%20of%20Computer%20Technology!5e0!3m2!1sen!2sin!4v1744478939032!5m2!1sen!2sin";
+
+
