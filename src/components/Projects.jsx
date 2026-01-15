@@ -50,7 +50,7 @@ const Projects = ({ isActive }) => {
         <div className="relative mb-6 md:hidden">
           <button
             onClick={() => setIsSelectOpen(!isSelectOpen)}
-            className="bg-eerie-black-2/80 backdrop-blur-sm text-light-gray flex justify-between items-center w-full p-3 px-4 border border-jet rounded-[14px] text-sm font-light"
+            className="bg-transparent backdrop-blur-sm text-light-gray flex justify-between items-center w-full p-3 px-4 border border-jet rounded-[14px] text-sm font-light"
           >
             <span className="capitalize">
               {activeFilter === 'all' ? 'Select category' : activeFilter}
@@ -59,7 +59,7 @@ const Projects = ({ isActive }) => {
           </button>
 
           {isSelectOpen && (
-            <ul className="absolute top-[calc(100%+6px)] w-full bg-eerie-black-2/90 backdrop-blur-sm border border-jet rounded-[14px] p-1.5 z-2">
+            <ul className="absolute top-[calc(100%+6px)] w-full bg-transparent backdrop-blur-md border border-jet rounded-[14px] p-1.5 z-2">
               {projectCategories.map((category) => (
                 <li key={category}>
                   <button

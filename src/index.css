@@ -88,7 +88,7 @@ body {
 }
 
 .bg-gradient-jet {
-    background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsla(240, 2%, 13%, 0.8);
+    background: transparent;
 }
 
 .bg-gradient-yellow-1 {
@@ -96,7 +96,7 @@ body {
 }
 
 .bg-gradient-yellow-2 {
-    background: linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsla(240, 2%, 13%, 0.8);
+    background: linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%), transparent;
 }
 
 .border-gradient-onyx {

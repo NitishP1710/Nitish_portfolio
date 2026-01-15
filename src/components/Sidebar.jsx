@@ -7,6 +7,8 @@ import {
   IoLogoGithub,
   IoLogoLinkedin,
   IoLogoInstagram,
+  IoLogoMedium,
+  IoLogoCodepen,
 } from "react-icons/io5";
 import { useState } from "react";
 import { personaInfo } from "../data/portfolioData";
@@ -16,7 +18,7 @@ const Sidebar = () => {
   return (
     <>
       <aside
-        className={`bg-eerie-black-2/80 backdrop-blur-sm border border-jet rounded-[20px] p-4 shadow-[var(--shadow-1)] z-[1] mb-4 transition-all duration-500 overflow-hidden
+        className={`relative bg-transparent backdrop-blur-sm rounded-[20px] p-4 shadow-[var(--shadow-1)] z-[1] mb-4 transition-all duration-500 overflow-hidden before:absolute before:inset-0 before:rounded-[20px] before:p-px before:bg-gradient-to-br before:from-jet before:to-transparent before:-z-1 before:content-['']
           ${isExpanded ? "max-h-[600px]" : "max-h-[112px]"}
            md:max-h-[180px] md:mb-8 md:p-8
            lg:sticky lg:top-[60px] lg:max-h-max lg:h-fit lg:pt-[60px] lg:min-w-[300px]`}
@@ -124,6 +126,14 @@ const Sidebar = () => {
               href={personaInfo.social.instagram}
               icon={<IoLogoInstagram />}
             />
+            <SocialLink
+              href={personaInfo.social.medium}
+              icon={<IoLogoMedium />}
+            />
+            <SocialLink
+              href={personaInfo.social.leetcode}
+              icon=""
+            />
           </ul>
         </div>
       </aside>
@@ -133,8 +143,8 @@ const Sidebar = () => {
 
 const ContactItem = ({ icon, title, content }) => (
   <li className="flex items-center gap-4">
-    <div className="relative bg-[linear-gradient(to_bottom_right,hsla(0,0%,25%,0.5)_0%,hsla(0,0%,25%,0)_50%)] p-2 rounded-lg shadow-(--shadow-2) z-1 text-orange-yellow text-lg backdrop-blur-sm">
-      <span className="absolute inset-px bg-eerie-black-1/80 rounded-[inherit] -z-1" />
+    <div className="relative bg-gradient-to-br from-jet to-transparent p-2 rounded-lg shadow-(--shadow-2) z-1 text-orange-yellow text-lg">
+      <span className="absolute inset-px bg-transparent rounded-[inherit] -z-1" />
       {icon}
     </div>
     <div className="min-w-0">

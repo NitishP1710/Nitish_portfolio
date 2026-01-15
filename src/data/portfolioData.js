@@ -1,6 +1,6 @@
 export const personaInfo = {
   name: "Nitish Patil",
-  title: "Full Stack Developer",
+  title: "Full Stack Developer- AIML",
   avatar: "/images/my-avatar.png",
   email: "nitishpatil.pict@gmail.com",
   phone: "9371125719",
@@ -9,20 +9,23 @@ export const personaInfo = {
   resumeURL:
     "https://drive.google.com/drive/u/0/folders/1CGb5NH8ooKSmRRCpXArctTIvbIDHbzMv",
   social: {
-    github: "",
-    leetcode :"",
-    codechef :"",
-    codeforces :"",
-    linkedin: "",
-    instagram: "",
+    github: "https://github.com/NitishP1710",
+    leetcode :"https://leetcode.com/u/nitish-9371/",
+    medium : "https://medium.com/@patilnitish2004",
+    codechef :"https://www.codechef.com/users/npp_1710",
+    codeforces :"https://codeforces.com/profile/_Nitish_1710",
+    linkedin: "https://www.linkedin.com/in/nitish-patil-922b26288/",
+    instagram: "https://www.instagram.com/nitish_patil2004/?igsh=MWoxZWpuZjduMTU4Yw%3D%3D#",
   },
 };
 
 export const aboutText = [
-  `I am a skilled full-stack developer with extensive experience in backend development, AI/ML integration, GenAI-powered application development. I specialize in backend technologies using <strong>Node.js</strong> and <strong>Flask</strong>, and have expertise in frameworks such as <strong>ReactJS</strong>, <strong>FastAPI</strong>,and <strong>Express</strong>.`,
-  `My proficiency extends to AI/ML integration, where I build intelligent, data-driven solutions and GenAI-powered applications. In the Cloud & DevOps domain, I have hands-on experience deploying and maintaining applications using <strong>AWS</strong>, <strong>GCP</strong>, <strong>Docker</strong>, and <strong>CI/CD pipelines</strong>. I am proficient in programming languages including <strong>C++</strong>, <strong>Python</strong>, <strong>JavaScript</strong>, and <strong>TypeScript</strong>. I excel at creating efficient, scalable, cloud-based and user-friendly solutions that address real-world problems. As a quick learner, I collaborate closely with clients to bring their ideas to life and adapt quickly to new technologies and frameworks.`,
-  `Driven by passion for innovation and problem-solving, I actively participate in hackathons, having achieved:<br/>- 🥇 1st place in <strong>Hack-AI-Thon Xenia'24</strong><br/>- 🥈 2nd place in <strong>Web and App Pulzion'24</strong><br/>- 🎯 Finalist at <strong>COEP Mindspark '24</strong>`,
+   `I am a <strong>GenAI-focused</strong> full-stack developer with a strong interest in building intelligent, AI-powered web applications. I work extensively with <strong>LLMs</strong>, <strong>LangChain</strong>, and <strong>Gemini</strong> to create systems that enable contextual understanding, conversational interfaces, and real-time decision making.
+   My technical expertise spans <strong>Node.js</strong>, <strong>Express</strong>, <strong>ReactJS</strong>, and <strong>MongoDB</strong>, with a solid foundation in <strong>DSA</strong> and scalable backend design. I enjoy solving complex problems and turning ideas into efficient, user-centric products.
+   I am a competitive programmer and active campus contributor with 700+ solved problems, a <strong>LeetCode Knight</strong> rating, and a <strong>3-Star CodeChef</strong> profile. Beyond coding, I serve social cause through <strong>PICT NSS</strong>, lead community initiatives, and actively contribute to technical events and hackathons.`,
+   `🏆 Achievements include a <strong>LeetCode Knight</strong> rating (Top 5.5% globally), <strong>700+ problems solved</strong>, and a <strong>3-Star CodeChef</strong> profile.`
 ];
+
 
 export const services = [
   {
@@ -40,11 +43,6 @@ export const services = [
     title: "GenAI Solutions",
     description: "Engineering next-gen tools with LLMs using Langchain and Langraph for smart content creation, automated insights, RAG pipelines, and adaptive user experiences."
   },
-//   {
-//     icon: "/images/icon-app.svg",
-//     title: "Mobile apps",
-//     description: "Building mobile experiences with edge AI, offline-first design, and real-time collaboration."
-//   }
 ];
 
 export const education = [
@@ -72,23 +70,21 @@ export const experience = [
     url: "https://www.cequence.ai/",
     period: "Sep 2025– Jan 2026",
     role: "Full Stack Developer",
-    description: "Developed an automated testing suite for validating MCP endpoints, improving reliability and efficiency in backendtesting."
+    description: "Worked on testing MCP Server tools used in development environments like Windsurf ,Cursor and Claude IDEs.Developed an automated testing suite for validating MCP endpoints, improving reliability and efficiency in backend testing."
   },
   {
-    company: "IEE EMBS Society",
-    url: "https://sushiv.in/",
+    company: "IEEE EMBS Society",
+    url: "https://www.embs.org/",
     period: "June 2025 - July 2025",
     role: "AI-ML",
-    description: "Worked on Epillepsy and Sezuire Detection using Deep Learning and Neural Network.Build model with accuracy 93%"
+    description: "Worked on Epillepsy and Sezuire Detection using Deep Learning and Neural Network.Build model with accuracy 93%. Added GenAI integration to analyze result generated by model"
   }
 ];
 
 export const skills = [
-  "React", "Next.js", "Node.js", "Python", "Streamlit",
-  "GenAI", "MySQL", "Java", "C++",
-  "MongoDB", "HTML5", "CSS3", "JavaScript", "NodeJS", "Express",
-  "FastAPI", "Postman",
-  "GitHub", "NumPy", "Pandas","Langchain","Langraph","n8n"
+  "Python", "C++", "Java", "GenAI", "React", "Next.js", "Node.js","MySQL",
+  "MongoDB", "HTML5", "CSS3", "JavaScript" , "Express",  "FastAPI", "Postman",
+  "GitHub/GitLab", "NumPy", "Pandas","MatPlotLib","Langchain","Langraph","n8n"
 ];
 
 export const techSlugs = [

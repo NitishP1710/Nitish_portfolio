@@ -108,7 +108,7 @@ const Skills = ({ isActive }) => {
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="bg-white text-black px-3 py-1 rounded-[20px] text-sm font-medium shadow-md"
+              className="bg-transparent text-light-gray px-3 py-1 rounded-[20px] text-sm font-medium shadow-md border border-jet hover:text-orange-yellow hover:border-orange-yellow transition-colors"
             >
               {skill}
             </span>
@@ -118,7 +118,7 @@ const Skills = ({ isActive }) => {
 
       {/* Skills Cloud - Desktop Only */}
       <section className="hidden md:block text-center mt-4">
-        <div className="w-[400px] h-[400px] mx-auto rounded-[20px] bg-eerie-black-2/80 backdrop-blur-sm shadow-[0_0_10px_rgba(255,255,255,0.1)] flex justify-center items-center">
+        <div className="w-[400px] h-[400px] mx-auto rounded-[20px] bg-transparent backdrop-blur-sm shadow-[0_0_10px_rgba(255,255,255,0.1)] flex justify-center items-center border border-jet">
           <div ref={cloudRef} className="icon-cloud w-[400px] h-[400px] relative perspective-[1000px]">
             {techSlugs.map((slug, index) => (
               <div
@@ -143,8 +143,8 @@ const Skills = ({ isActive }) => {
 const TimelineSection = ({ title, items, type }) => (
   <section className="mb-8">
     <div className="flex items-center gap-4 mb-6">
-      <div className="relative bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] w-[30px] h-[30px] md:w-12 md:h-12 rounded-lg md:rounded-xl flex justify-center items-center text-base md:text-lg text-orange-yellow shadow-[var(--shadow-1)] z-[1]">
-        <span className="absolute inset-[1px] bg-eerie-black-1 rounded-inherit -z-[1] rounded-lg md:rounded-xl" />
+      <div className="relative bg-gradient-to-br from-jet to-transparent w-[30px] h-[30px] md:w-12 md:h-12 rounded-lg md:rounded-xl flex justify-center items-center text-base md:text-lg text-orange-yellow shadow-[var(--shadow-1)] z-[1]">
+        <span className="absolute inset-[1px] bg-transparent rounded-inherit -z-[1] rounded-lg md:rounded-xl" />
         <IoBookOutline />
       </div>
       <h3 className="text-white-2 text-lg md:text-2xl font-medium">

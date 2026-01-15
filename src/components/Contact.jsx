@@ -101,12 +101,12 @@ const Contact = ({ isActive }) => {
           <button
             type="submit"
             disabled={!isFormValid}
-            className="relative w-full md:w-auto md:ml-auto flex justify-center items-center gap-2.5 bg-[linear-gradient(to_bottom_right,hsla(0,0%,25%,0.5)_0%,hsla(0,0%,25%,0)_50%)] backdrop-blur-sm text-orange-yellow py-3 md:py-4 px-5 rounded-[14px] text-sm md:text-base capitalize shadow-(--shadow-3) z-1 transition-all
+            className="relative w-full md:w-auto md:ml-auto flex justify-center items-center gap-2.5 bg-gradient-to-br from-jet to-transparent backdrop-blur-sm text-orange-yellow py-3 md:py-4 px-5 rounded-[14px] text-sm md:text-base capitalize shadow-(--shadow-3) z-1 transition-all
               disabled:opacity-70 disabled:cursor-not-allowed
               enabled:hover:bg-gradient-yellow-1
               group"
           >
-            <span className="absolute inset-px bg-gradient-jet backdrop-blur-sm rounded-[inherit] -z-1 transition-all group-enabled:group-hover:bg-gradient-yellow-2" />
+            <span className="absolute inset-px bg-transparent rounded-[inherit] -z-1 transition-all group-enabled:group-hover:bg-gradient-yellow-2" />
             <IoPaperPlane className="text-base md:text-lg" />
             <span>Send Message</span>
           </button>

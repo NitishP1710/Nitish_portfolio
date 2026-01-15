@@ -38,8 +38,8 @@ const About = ({ isActive }) => {
 };
 
 const ServiceCard = ({ icon, title, description }) => (
-  <li className="relative bg-[linear-gradient(to_bottom_right,hsla(0,0%,25%,0.5)_0%,hsla(0,0%,25%,0)_50%)] backdrop-blur-sm p-5 md:p-8 rounded-[14px] shadow-(--shadow-2) z-1 flex flex-col md:flex-row items-start gap-4 md:gap-5">
-    <span className="absolute inset-px bg-gradient-jet backdrop-blur-sm rounded-[inherit] -z-1" />
+  <li className="relative bg-gradient-to-br from-jet to-transparent backdrop-blur-sm p-5 md:p-8 rounded-[14px] shadow-(--shadow-2) z-1 flex flex-col md:flex-row items-start gap-4 md:gap-5">
+    <span className="absolute inset-px bg-transparent rounded-[inherit] -z-1" />
     <div className="mx-auto md:mx-0 md:mt-1">
       <img src={icon} alt={title} className="w-10" />
     </div>

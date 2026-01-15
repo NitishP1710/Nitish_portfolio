@@ -18,7 +18,7 @@ function App() {
       <div className="relative w-full lg:min-w-[75%] lg:w-[75%] lg:mx-0">
         <Navbar activePage={activePage} setActivePage={setActivePage} />
 
-        <div className="bg-eerie-black-2/80 backdrop-blur-sm border border-jet rounded-[20px] p-4 md:p-8 shadow-(--shadow-1) z-1 lg:min-h-full lg:shadow-(--shadow-5)">
+        <div className="relative bg-transparent backdrop-blur-sm rounded-[20px] p-4 md:p-8 shadow-(--shadow-1) z-1 lg:min-h-full lg:shadow-(--shadow-5) before:absolute before:inset-0 before:rounded-[20px] before:p-px before:bg-gradient-to-br before:from-jet before:to-transparent before:-z-1 before:content-['']">
           <About isActive={activePage === 'about'} />
           <Skills isActive={activePage === 'skills'} />
           <Projects isActive={activePage === 'projects'} />
