@@ -1,7 +1,7 @@
 export const personaInfo = {
   name: "Nitish Patil",
   title: "Full Stack Developer",
-  avatar: "",
+  avatar: "/images/my-avatar.png",
   email: "nitishpatil.pict@gmail.com",
   phone: "9371125719",
   birthday: "Oct 17,2004",

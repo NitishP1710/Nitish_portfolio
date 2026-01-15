@@ -41,12 +41,12 @@ const Contact = ({ isActive }) => {
       <header>
         <h2 className="text-white-2 text-2xl md:text-[32px] font-semibold capitalize relative pb-2 md:pb-5 mb-6 md:mb-8">
           Contact
-          <span className="absolute bottom-0 left-0 w-[30px] md:w-10 h-[3px] md:h-[5px] bg-gradient-to-r from-orange-yellow to-vegas-gold rounded-full" />
+          <span className="absolute bottom-0 left-0 w-7.5 md:w-10 h-0.75 md:h-1.25 bg-linear-to-r from-orange-yellow to-vegas-gold rounded-full" />
         </h2>
       </header>
 
       {/* Map Section */}
-      <section className="relative h-[250px] md:h-[380px] w-full rounded-2xl md:rounded-[18px] mb-8 border border-jet overflow-hidden">
+      <section className="relative h-62.5 md:h-95 w-full rounded-2xl md:rounded-[18px] mb-8 border border-jet overflow-hidden">
         <figure className="h-full">
           <iframe
             src={mapEmbedUrl}
@@ -95,18 +95,18 @@ const Contact = ({ isActive }) => {
             onChange={handleInputChange}
             placeholder="Your Message"
             required
-            className="w-full bg-transparent text-white-2 text-sm md:text-[15px] font-normal py-3 md:py-4 px-5 border border-jet rounded-[14px] outline-none focus:border-orange-yellow transition-colors min-h-[100px] h-[120px] max-h-[200px] resize-y mb-6 md:mb-8 placeholder:font-medium"
+            className="w-full bg-transparent text-white-2 text-sm md:text-[15px] font-normal py-3 md:py-4 px-5 border border-jet rounded-[14px] outline-none focus:border-orange-yellow transition-colors min-h-25 h-30 max-h-50 resize-y mb-6 md:mb-8 placeholder:font-medium"
           />
 
           <button
             type="submit"
             disabled={!isFormValid}
-            className="relative w-full md:w-auto md:ml-auto flex justify-center items-center gap-2.5 bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] text-orange-yellow py-3 md:py-4 px-5 rounded-[14px] text-sm md:text-base capitalize shadow-[var(--shadow-3)] z-[1] transition-all
+            className="relative w-full md:w-auto md:ml-auto flex justify-center items-center gap-2.5 bg-[linear-gradient(to_bottom_right,hsla(0,0%,25%,0.5)_0%,hsla(0,0%,25%,0)_50%)] backdrop-blur-sm text-orange-yellow py-3 md:py-4 px-5 rounded-[14px] text-sm md:text-base capitalize shadow-(--shadow-3) z-1 transition-all
               disabled:opacity-70 disabled:cursor-not-allowed
               enabled:hover:bg-gradient-yellow-1
               group"
           >
-            <span className="absolute inset-[1px] bg-gradient-jet rounded-[inherit] -z-[1] transition-all group-enabled:group-hover:bg-gradient-yellow-2" />
+            <span className="absolute inset-px bg-gradient-jet backdrop-blur-sm rounded-[inherit] -z-1 transition-all group-enabled:group-hover:bg-gradient-yellow-2" />
             <IoPaperPlane className="text-base md:text-lg" />
             <span>Send Message</span>
           </button>

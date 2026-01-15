@@ -118,7 +118,7 @@ const Skills = ({ isActive }) => {
 
       {/* Skills Cloud - Desktop Only */}
       <section className="hidden md:block text-center mt-4">
-        <div className="w-[400px] h-[400px] mx-auto rounded-[20px] bg-[#1a1a1a] shadow-[0_0_10px_rgba(255,255,255,0.1)] flex justify-center items-center">
+        <div className="w-[400px] h-[400px] mx-auto rounded-[20px] bg-eerie-black-2/80 backdrop-blur-sm shadow-[0_0_10px_rgba(255,255,255,0.1)] flex justify-center items-center">
           <div ref={cloudRef} className="icon-cloud w-[400px] h-[400px] relative perspective-[1000px]">
             {techSlugs.map((slug, index) => (
               <div

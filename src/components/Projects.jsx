@@ -22,8 +22,9 @@ const Projects = ({ isActive }) => {
       <header>
         <h2 className="text-white-2 text-2xl md:text-[32px] font-semibold capitalize relative pb-2 md:pb-5 mb-6 md:mb-8">
           Projects
-          <span className="absolute bottom-0 left-0 w-[30px] md:w-10 h-[3px] md:h-[5px] bg-gradient-to-r from-orange-yellow to-vegas-gold rounded-full" />
+          <span className="absolute bottom-0 left-0 w-7.5 md:w-10 h-0.75 md:h-1.25 bg-linear-to-r from-orange-yellow to-vegas-gold rounded-full" />
         </h2>
+        
       </header>
 
       <section>
@@ -49,7 +50,7 @@ const Projects = ({ isActive }) => {
         <div className="relative mb-6 md:hidden">
           <button
             onClick={() => setIsSelectOpen(!isSelectOpen)}
-            className="bg-eerie-black-2 text-light-gray flex justify-between items-center w-full p-3 px-4 border border-jet rounded-[14px] text-sm font-light"
+            className="bg-eerie-black-2/80 backdrop-blur-sm text-light-gray flex justify-between items-center w-full p-3 px-4 border border-jet rounded-[14px] text-sm font-light"
           >
             <span className="capitalize">
               {activeFilter === 'all' ? 'Select category' : activeFilter}
@@ -58,12 +59,12 @@ const Projects = ({ isActive }) => {
           </button>
 
           {isSelectOpen && (
-            <ul className="absolute top-[calc(100%+6px)] w-full bg-eerie-black-2 border border-jet rounded-[14px] p-1.5 z-[2]">
+            <ul className="absolute top-[calc(100%+6px)] w-full bg-eerie-black-2/90 backdrop-blur-sm border border-jet rounded-[14px] p-1.5 z-2">
               {projectCategories.map((category) => (
                 <li key={category}>
                   <button
                     onClick={() => handleFilterClick(category)}
-                    className="bg-eerie-black-2 text-light-gray text-sm font-light capitalize w-full py-2 px-2.5 rounded-lg text-left hover:bg-[hsl(240,2%,20%)] transition-colors"
+                    className="bg-transparent text-light-gray text-sm font-light capitalize w-full py-2 px-2.5 rounded-lg text-left hover:bg-[hsla(240,2%,20%,0.8)] transition-colors"
                   >
                     {category}
                   </button>
@@ -87,12 +88,12 @@ const Projects = ({ isActive }) => {
 const ProjectCard = ({ title, category, image, url, description }) => (
   <li className="animate-scaleUp">
     <a href={url} target="_blank" rel="noopener noreferrer" className="block w-full group">
-      <figure className="relative w-full h-[200px] md:h-auto md:aspect-[4/3] rounded-2xl overflow-hidden mb-4">
+      <figure className="relative w-full h-50 md:h-auto md:aspect-4/3 rounded-2xl overflow-hidden mb-4">
         {/* Overlay */}
-        <div className="absolute inset-0 bg-transparent group-hover:bg-black/50 transition-colors z-[1]" />
+        <div className="absolute inset-0 bg-transparent group-hover:bg-black/50 transition-colors z-1" />
         
         {/* Eye Icon */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-jet text-orange-yellow p-4 rounded-xl opacity-0 scale-[0.8] group-hover:opacity-100 group-hover:scale-100 transition-all z-[1]">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-jet text-orange-yellow p-4 rounded-xl opacity-0 scale-[0.8] group-hover:opacity-100 group-hover:scale-100 transition-all z-1">
           <IoEyeOutline className="text-xl" />
         </div>
 
