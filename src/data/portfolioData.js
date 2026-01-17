@@ -7,7 +7,7 @@ export const personaInfo = {
   birthday: "Oct 17,2004",
   location: "PICT,Pune",
   resumeURL:
-    "https://drive.google.com/drive/u/0/folders/1CGb5NH8ooKSmRRCpXArctTIvbIDHbzMv",
+    "https://drive.google.com/file/d/1AFP-aTcJgFY6qFG3ZqOTugJQUaL3rLbf/view?usp=drive_link",
   social: {
     github: "https://github.com/NitishP1710",
     leetcode :"https://leetcode.com/u/nitish-9371/",
@@ -88,11 +88,11 @@ export const skills = [
 ];
 
 export const techSlugs = [
-  "typescript", "react", "flutter", "mongodb", "html5", "css3",
+  "typescript", "react", "flutter", "mongodb", "html5", "css",
   "javascript", "nodedotjs", "express", "flask", "fastapi",
-  "postgresql", "firebase", "postman", "vercel", "amazonwebservices",
+  "postgresql", "firebase", "postman", "vercel",
   "mysql", "docker", "git", "jira", "github", "gitlab", "numpy",
-  "pandas", "cplusplus", "figma", "amazonec2", "streamlit"
+  "pandas", "cplusplus", "figma", "streamlit"
 ];
 
 export const projectCategories = [
@@ -108,85 +108,109 @@ export const projects = [
     title: "hack-o-hire",
     category: "genai powered",
     image: "/images/hack-o-hire.png",
-    url: "https://docs.google.com/presentation/d/1sMU1hyan8z3TuMn-Yjd-NtVGnBYsDl0E/edit#slide=id.p1",
-    description: "GenAI Powered and Full Stack"
+    github: "https://github.com/NitishP1710/hack-o-hire",
+    liveUrl: "https://docs.google.com/presentation/d/1sMU1hyan8z3TuMn-Yjd-NtVGnBYsDl0E/edit#slide=id.p1",
+    description: "AI-powered hiring platform that streamlines recruitment using GenAI for resume parsing, candidate matching, and automated interview scheduling.",
+    techStack: ["React", "Node.js", "MongoDB", "LangChain", "Gemini API", "Express"]
   },
   {
     title: "CodeDocs",
     category: "genai powered",
     image: "/images/codedocs2.png",
-    url: "https://github.com/prajwalpkp2106/CodeDocs",
-    description: "GenAI Powered and Full Stack"
+    github: "https://github.com/prajwalpkp2106/CodeDocs",
+    liveUrl: "",
+    description: "Intelligent documentation generator that automatically creates comprehensive docs from code using LLMs with context-aware explanations.",
+    techStack: ["React", "Node.js", "LangChain", "Gemini", "MongoDB", "Express"]
   },
   {
     title: "Portfolio",
     category: "full stack project",
     image: "/images/Portfolio.png",
-    url: "https://github.com/prajwalpkp2106/Portfolio",
-    description: "Full Stack Project"
+    github: "https://github.com/prajwalpkp2106/Portfolio",
+    liveUrl: "",
+    description: "Modern personal portfolio website with smooth animations, particle background, and responsive design showcasing projects and skills.",
+    techStack: ["React", "Vite", "Tailwind CSS", "Framer Motion"]
   },
   {
     title: "PlantPulse",
     category: "ml-integrated projects",
     image: "/images/plant.jpg",
-    url: "https://github.com/prajwalpkp2106/Crop-Disease-Detection-App",
-    description: "ML-Integrated Project"
+    github: "https://github.com/prajwalpkp2106/Crop-Disease-Detection-App",
+    liveUrl: "",
+    description: "ML-powered mobile app for detecting crop diseases from leaf images using deep learning models with real-time prediction capabilities.",
+    techStack: ["Python", "TensorFlow", "Flask", "React Native", "OpenCV"]
   },
   {
     title: "Tactical Trends",
     category: "ml-integrated projects",
     image: "/images/tactical_trend1.png",
-    url: "https://github.com/prajwalpkp2106/Tactical_Trends-MindSpark24",
-    description: "ML-Integrated Project"
+    github: "https://github.com/prajwalpkp2106/Tactical_Trends-MindSpark24",
+    liveUrl: "",
+    description: "Sports analytics platform providing tactical insights using ML models to analyze player performance and predict match outcomes.",
+    techStack: ["Python", "Scikit-learn", "Pandas", "React", "FastAPI", "PostgreSQL"]
   },
   {
     title: "Sentement-Tube",
     category: "ml-integrated projects",
     image: "/images/sentiment.jpg",
-    url: "https://github.com/prajwalpkp2106/Sentement-Tube",
-    description: "ML-Integrated Project"
+    github: "https://github.com/prajwalpkp2106/Sentement-Tube",
+    liveUrl: "",
+    description: "YouTube comment sentiment analyzer that processes and visualizes audience sentiment using NLP and machine learning techniques.",
+    techStack: ["Python", "NLTK", "Scikit-learn", "Flask", "React", "YouTube API"]
   },
   {
     title: "VisualVoices",
     category: "ml-integrated projects",
     image: "/images/gdsc.jpg",
-    url: "https://github.com/prajwalpkp2106/GSC-Repo",
-    description: "ML-Integrated Project"
+    github: "https://github.com/prajwalpkp2106/GSC-Repo",
+    liveUrl: "",
+    description: "Accessibility tool that converts visual content to audio descriptions and vice versa, helping visually and hearing impaired users.",
+    techStack: ["Python", "TensorFlow", "OpenCV", "Google Cloud", "Flask", "React"]
   },
   {
     title: "InstaSwipeChat",
     category: "applications",
     image: "/images/instag.jpg",
-    url: "https://github.com/prajwalpkp2106/InstaSwipeChat",
-    description: "Applications"
+    github: "https://github.com/prajwalpkp2106/InstaSwipeChat",
+    liveUrl: "",
+    description: "Instagram-inspired swipe-based chat application with real-time messaging, media sharing, and story features.",
+    techStack: ["React Native", "Firebase", "Node.js", "Socket.io", "MongoDB"]
   },
   {
     title: "OmegleStreamApp",
     category: "applications",
     image: "/images/omegle.jpg",
-    url: "https://github.com/prajwalpkp2106/OmegleStreamApp",
-    description: "Applications"
+    github: "https://github.com/prajwalpkp2106/OmegleStreamApp",
+    liveUrl: "",
+    description: "Video streaming application with random chat functionality, WebRTC for peer-to-peer video calls, and real-time text chat.",
+    techStack: ["React", "WebRTC", "Socket.io", "Node.js", "Express"]
   },
   {
     title: "PriceHunt",
     category: "full stack project",
     image: "/images/pricehunt.jpg",
-    url: "https://github.com/prajwalpkp2106/PriceHunt",
-    description: "Full Stack Project"
+    github: "https://github.com/prajwalpkp2106/PriceHunt",
+    liveUrl: "",
+    description: "E-commerce price comparison platform that tracks prices across multiple websites and notifies users of price drops.",
+    techStack: ["React", "Node.js", "MongoDB", "Cheerio", "Express", "Redis"]
   },
   {
-    title: "CAMPUS-CAPTURES",
-    category: "full stack project",
-    image: "/images/campus_capture.jpg",
-    url: "https://github.com/prajwalpkp2106/CAMPUS-CAPTURES",
-    description: "Full Stack Project"
+    title: "Youtube Video Assistant",
+    category: "GenAI Powered",
+    image: "/images/Youtube_Assistant.png",
+    github: "https://github.com/NitishP1710/Langchain/tree/main/YoutuvbeChatbot",
+    liveUrl: "",
+    description: "Chrome Extension that extracts YouTube video IDs from URLs, fetches transcripts automatically, and enables conversational Q&A over video content usingGemini LLM",
+    techStack: ["HTML","Javascript","Python","LangChain","Gemini API"]
   },
   {
-    title: "E-Mandi",
+    title: "FARMS",
     category: "full stack project",
-    image: "/images/codecrafters.png",
-    url: "https://github.com/prajwalpkp2106/CodeCrafters",
-    description: "Full Stack Project"
+    image: "/images/FARMS.png",
+    github: "https://github.com/kalpeshshirsath11/Farms_frontend",
+    liveUrl: "https://farms-glmv.onrender.com/",
+    description: "Digital marketplace connecting farmers directly with consumers, eliminating middlemen and ensuring fair prices for agricultural products.Enable farmers yeild demand forcasting and reduce transport cost",
+    techStack: ["React", "Node.js", "MongoDB", "Express", "Haversson Distance"]
   }
 ];
 
