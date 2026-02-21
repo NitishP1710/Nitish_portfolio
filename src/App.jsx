@@ -7,6 +7,9 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import ParticleBackground from "./components/ParticleBackground";
 
+// 
+
+
 function App() {
   const [activePage,setActivePage] =useState('about')
   return (
