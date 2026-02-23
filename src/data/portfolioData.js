@@ -127,7 +127,7 @@ export const projects = [
     category: "full stack project",
     image: "/images/Portfolio.png",
     github: "https://github.com/NitishP1710/Nitish_portfolio",
-    liveUrl: "",
+    liveUrl: "https://nitish-portfolio-sepia.vercel.app/",
     description: "Modern personal portfolio website with smooth animations, particle background, and responsive design showcasing projects and skills.",
     techStack: ["React", "Vite", "Tailwind CSS", "Framer Motion"]
   },
