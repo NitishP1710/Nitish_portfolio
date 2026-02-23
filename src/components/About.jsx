@@ -41,7 +41,7 @@ const ServiceCard = ({ icon, title, description }) => (
   <li className="relative bg-gradient-to-br from-jet to-transparent backdrop-blur-sm p-5 md:p-8 rounded-[14px] shadow-(--shadow-2) z-1 flex flex-col md:flex-row items-start gap-4 md:gap-5">
     <span className="absolute inset-px bg-transparent rounded-[inherit] -z-1" />
     <div className="mx-auto md:mx-0 md:mt-1">
-      <img src={icon} alt={title} className="w-10" />
+      <img src={icon} alt={title} className="w-10 brightness-125 saturate-150" style={{filter: 'hue-rotate(150deg) brightness(1.3) saturate(1.5)'}} />
     </div>
     <div className="text-center md:text-left">
       <h4 className="text-white-2 text-base md:text-lg font-medium capitalize mb-2">

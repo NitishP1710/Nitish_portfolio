@@ -9,16 +9,16 @@ const ParticleBackground = () => {
         let animationFrameId;
         let particles = [];
 
-        // Configuration - Orange-Yellow theme matching navbar
+        // Configuration - Purple-Cyan theme
         const config = {
             particleCount: 100,
             particleColors: [
-                'hsla(45, 100%, 72%, 0.9)',   // orange-yellow (main)
-                'hsla(45, 100%, 65%, 0.85)',  // slightly darker orange-yellow
-                'hsla(40, 100%, 68%, 0.8)',   // warm orange-gold
-                'hsla(50, 90%, 70%, 0.85)',   // light gold
+                'hsla(190, 85%, 55%, 0.9)',   // cyan (main)
+                'hsla(270, 70%, 65%, 0.85)',  // purple
+                'hsla(200, 80%, 60%, 0.8)',   // light cyan
+                'hsla(280, 65%, 70%, 0.85)',  // light purple
             ],
-            lineColor: 'hsla(45, 100%, 72%, 0.15)',
+            lineColor: 'hsla(190, 85%, 55%, 0.15)',
             particleRadius: 2,
             lineWidth: 1,
             linkDistance: 150,
@@ -88,7 +88,7 @@ const ParticleBackground = () => {
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.strokeStyle = `hsla(45, 100%, 72%, ${opacity * 0.2})`;
+                        ctx.strokeStyle = `hsla(190, 85%, 55%, ${opacity * 0.2})`;
                         ctx.lineWidth = config.lineWidth;
                         ctx.stroke();
                     }

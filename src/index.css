@@ -2,24 +2,24 @@
 
 /* Body background */
 body {
-    background-color: hsl(240, 2%, 12%);
+    background: linear-gradient(135deg, hsl(250, 25%, 8%) 0%, hsl(240, 20%, 12%) 100%);
     min-height: 100vh;
 }
 
 @theme {
-    /* Colors */
-    --color-smoky-black: hsl(0, 0%, 7%);
-    --color-eerie-black-1: hsl(240, 2%, 13%);
-    --color-eerie-black-2: hsl(240, 2%, 12%);
-    --color-onyx: hsl(240, 1%, 17%);
-    --color-jet: hsl(0, 0%, 22%);
+    /* Colors - Modern Purple-Cyan Theme */
+    --color-smoky-black: hsl(250, 20%, 8%);
+    --color-eerie-black-1: hsl(245, 18%, 14%);
+    --color-eerie-black-2: hsl(242, 16%, 12%);
+    --color-onyx: hsl(240, 15%, 18%);
+    --color-jet: hsl(238, 12%, 24%);
     --color-white-1: hsl(0, 0%, 100%);
-    --color-white-2: hsl(0, 0%, 98%);
-    --color-orange-yellow: hsl(45, 100%, 72%);
-    --color-vegas-gold: hsl(45, 54%, 58%);
-    --color-light-gray: hsl(0, 0%, 84%);
-    --color-light-gray-70: hsla(0, 0%, 84%, 0.7);
-    --color-bittersweet: hsl(0, 43%, 51%);
+    --color-white-2: hsl(210, 40%, 98%);
+    --color-orange-yellow: hsl(190, 85%, 55%);
+    --color-vegas-gold: hsl(270, 70%, 65%);
+    --color-light-gray: hsl(220, 15%, 85%);
+    --color-light-gray-70: hsla(220, 15%, 85%, 0.7);
+    --color-bittersweet: hsl(320, 75%, 60%);
 
     /* Font Family */
     --font-poppins: 'Poppins', sans-serif;
@@ -44,7 +44,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-orange-yellow);
+    background: linear-gradient(180deg, var(--color-orange-yellow), var(--color-vegas-gold));
     border-radius: 5px;
 }
 
