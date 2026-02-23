@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ThemeProvider } from "./context/ThemeContext";
 import Sidebar from "./components/Sidebar"
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -13,7 +14,7 @@ import ParticleBackground from "./components/ParticleBackground";
 function App() {
   const [activePage,setActivePage] =useState('about')
   return (
-    <>
+    <ThemeProvider>
       <ParticleBackground />
       <main className="relative z-10 mx-3 md:mx-auto my-4 md:mt-16 mb-20 md:mb-24 min-w-64.75 lg:max-w-300 lg:flex lg:justify-center lg:items-stretch lg:gap-6">
       <Sidebar />
@@ -29,7 +30,7 @@ function App() {
         </div>
       </div>
     </main>
-    </>
+    </ThemeProvider>
   )
 }
 

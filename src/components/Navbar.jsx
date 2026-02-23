@@ -1,7 +1,11 @@
 import { personaInfo } from "../data/portfolioData";
+import { useTheme } from "../context/ThemeContext";
+import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 
 const Navbar = ({ activePage, setActivePage }) => {
+  const { theme, toggleTheme } = useTheme();
   const navItems = ["About", "Skills", "Projects", "Contact"];
+  
   return (
     <nav
       className="fixed bottom-0 left-0 w-full bg-onyx/75 backdrop-blur-[10px] border border-jet rounded-t-xl md:rounded-t-[20px] shadow-(--shadow-2) z-5
@@ -22,6 +26,20 @@ const Navbar = ({ activePage, setActivePage }) => {
             </button>
           </li>
         ))}
+        <li>
+          <button
+            onClick={toggleTheme}
+            className="text-light-gray hover:text-orange-yellow transition-colors p-2 flex items-center justify-center"
+            title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+          >
+            {theme === 'dark' ? (
+              <IoSunnyOutline className="text-xl md:text-2xl" />
+            ) : (
+              <IoMoonOutline className="text-xl md:text-2xl" />
+            )}
+          </button>
+        </li>
         <li id="resume">
           <a
             href={personaInfo.resumeURL}

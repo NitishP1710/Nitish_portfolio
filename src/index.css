@@ -2,12 +2,22 @@
 
 /* Body background */
 body {
-    background: linear-gradient(135deg, hsl(250, 25%, 8%) 0%, hsl(240, 20%, 12%) 100%);
     min-height: 100vh;
+    transition: background 0.3s ease;
+}
+
+/* Dark Theme (Default) */
+html.dark body {
+    background: linear-gradient(135deg, hsl(250, 25%, 8%) 0%, hsl(240, 20%, 12%) 100%);
+}
+
+/* Light Theme */
+html.light body {
+    background: linear-gradient(135deg, hsl(210, 50%, 95%) 0%, hsl(200, 40%, 98%) 100%);
 }
 
 @theme {
-    /* Colors - Modern Purple-Cyan Theme */
+    /* Dark Mode Colors - Modern Purple-Cyan Theme */
     --color-smoky-black: hsl(250, 20%, 8%);
     --color-eerie-black-1: hsl(245, 18%, 14%);
     --color-eerie-black-2: hsl(242, 16%, 12%);
@@ -20,6 +30,14 @@ body {
     --color-light-gray: hsl(220, 15%, 85%);
     --color-light-gray-70: hsla(220, 15%, 85%, 0.7);
     --color-bittersweet: hsl(320, 75%, 60%);
+    
+    /* Light Mode Override Colors */
+    --color-light-bg: hsl(210, 50%, 98%);
+    --color-light-card: hsl(0, 0%, 100%);
+    --color-light-border: hsl(220, 15%, 88%);
+    --color-light-text: hsl(240, 8%, 15%);
+    --color-light-text-secondary: hsl(240, 4%, 35%);
+    --color-light-shadow: hsla(220, 15%, 25%, 0.15%);
 
     /* Font Family */
     --font-poppins: 'Poppins', sans-serif;
@@ -168,4 +186,31 @@ body {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+/* Light Mode Theme Overrides */
+html.light {
+    /* Override Tailwind color variables for light mode */
+    --color-smoky-black: hsl(210, 50%, 98%);
+    --color-eerie-black-1: hsl(0, 0%, 100%);
+    --color-eerie-black-2: hsl(210, 40%, 98%);
+    --color-onyx: hsl(220, 15%, 92%);
+    --color-jet: hsl(220, 12%, 88%);
+    --color-white-1: hsl(240, 8%, 12%);
+    --color-white-2: hsl(240, 8%, 15%);
+    --color-light-gray: hsl(240, 4%, 35%);
+    --color-light-gray-70: hsla(240, 4%, 35%, 0.7);
+}
+
+html.light ::-webkit-scrollbar-track {
+    background: hsl(220, 15%, 92%);
+}
+
+html.light ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, hsl(190, 85%, 45%), hsl(270, 70%, 55%));
+}
+
+html.light ::selection {
+    background: hsl(190, 85%, 55%);
+    color: hsl(0, 0%, 100%);
 }

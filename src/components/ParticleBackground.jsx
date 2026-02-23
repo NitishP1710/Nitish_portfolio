@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react';
+import { useTheme } from '../context/ThemeContext';
 
 const ParticleBackground = () => {
     const canvasRef = useRef(null);
+    const { theme } = useTheme();
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -9,16 +11,22 @@ const ParticleBackground = () => {
         let animationFrameId;
         let particles = [];
 
-        // Configuration - Purple-Cyan theme
+        // Configuration - Theme-aware colors
+        const isDark = theme === 'dark';
         const config = {
             particleCount: 100,
-            particleColors: [
+            particleColors: isDark ? [
                 'hsla(190, 85%, 55%, 0.9)',   // cyan (main)
                 'hsla(270, 70%, 65%, 0.85)',  // purple
                 'hsla(200, 80%, 60%, 0.8)',   // light cyan
                 'hsla(280, 65%, 70%, 0.85)',  // light purple
+            ] : [
+                'hsla(190, 75%, 45%, 0.7)',   // darker cyan for light mode
+                'hsla(270, 60%, 55%, 0.65)',  // darker purple for light mode
+                'hsla(200, 70%, 50%, 0.6)',   // darker light cyan
+                'hsla(280, 55%, 60%, 0.65)',  // darker light purple
             ],
-            lineColor: 'hsla(190, 85%, 55%, 0.15)',
+            lineColor: isDark ? 'hsla(190, 85%, 55%, 0.15)' : 'hsla(190, 75%, 45%, 0.1)',
             particleRadius: 2,
             lineWidth: 1,
             linkDistance: 150,
@@ -88,7 +96,10 @@ const ParticleBackground = () => {
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.strokeStyle = `hsla(190, 85%, 55%, ${opacity * 0.2})`;
+                        const lineOpacity = isDark ? opacity * 0.2 : opacity * 0.15;
+                        ctx.strokeStyle = isDark 
+                            ? `hsla(190, 85%, 55%, ${lineOpacity})` 
+                            : `hsla(190, 75%, 45%, ${lineOpacity})`;
                         ctx.lineWidth = config.lineWidth;
                         ctx.stroke();
                     }
@@ -128,7 +139,7 @@ const ParticleBackground = () => {
             cancelAnimationFrame(animationFrameId);
             window.removeEventListener('resize', resizeCanvas);
         };
-    }, []);
+    }, [theme]); // Reinitialize when theme changes
 
     return (
         <canvas
