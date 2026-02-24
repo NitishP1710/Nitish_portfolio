@@ -65,6 +65,13 @@ export const education = [
 ];
 
 export const experience = [
+   {
+    company: "Agribid Pvt. Ltd",
+    url: "https://agribid.ai/index-dark.html",
+    period: "Feb 2026",
+    role: "Full Stack Developer-FastAPI",
+    description: "Working on admin-side RBAC backend development, designing secure APIs for role, permission, and user access management"
+  },
   {
     company: "Cequence Security",
     url: "https://www.cequence.ai/",
