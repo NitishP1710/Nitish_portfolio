@@ -1,7 +1,7 @@
 export const personaInfo = {
   name: "Nitish Patil",
-  title: "Full Stack Developer- AIML",
-  avatar: "/favicon.svg",
+  title: "AIML(LLM)- GenAI",
+  avatar: "/images/logo.png",
   email: "nitishpatil.pict@gmail.com",
   phone: "9371125719",
   birthday: "Oct 17,2004",
@@ -203,7 +203,7 @@ export const projects = [
   // },
   {
     title: "Youtube Video Assistant",
-    category: "genaa powered",
+    category: "genai powered",
     image: "/images/Youtube_Assistant.png",
     github: "https://github.com/NitishP1710/Langchain/tree/main/YoutuvbeChatbot",
     liveUrl: "",

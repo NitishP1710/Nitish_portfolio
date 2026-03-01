@@ -25,11 +25,11 @@ const Sidebar = () => {
       >
         {/* Basic Info */}
         <div className="relative flex items-center gap-4 md:gap-6 lg:flex-col">
-          <figure className="bg-gradient-onyx rounded-[20px] md:rounded-[30px]">
+          <figure className="rounded-[20px] md:rounded-[30px] p-2 md:p-3">
             <img
               src={personaInfo.avatar}
               alt={personaInfo.name}
-              className="w-20 md:w-[120px] lg:w-[150px]"
+              className="w-20 md:w-[120px] lg:w-[150px] rounded-[16px] md:rounded-[24px]"
             />
           </figure>
 
