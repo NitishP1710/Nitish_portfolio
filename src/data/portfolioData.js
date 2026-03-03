@@ -10,38 +10,39 @@ export const personaInfo = {
     "https://drive.google.com/file/d/1AFP-aTcJgFY6qFG3ZqOTugJQUaL3rLbf/view?usp=drive_link",
   social: {
     github: "https://github.com/NitishP1710",
-    leetcode :"https://leetcode.com/u/nitish-9371/",
-    medium : "https://medium.com/@patilnitish2004",
-    codechef :"https://www.codechef.com/users/npp_1710",
-    codeforces :"https://codeforces.com/profile/_Nitish_1710",
+    leetcode: "https://leetcode.com/u/nitish-9371/",
+    medium: "https://medium.com/@patilnitish2004",
+    // codechef: "https://www.codechef.com/users/npp_1710",
+    // codeforces: "https://codeforces.com/profile/_Nitish_1710",
     linkedin: "https://www.linkedin.com/in/nitish-patil-922b26288/",
-    instagram: "https://www.instagram.com/nitish_patil2004/?igsh=MWoxZWpuZjduMTU4Yw%3D%3D#",
   },
 };
 
 export const aboutText = [
-   `I am a <strong>full-stack</strong> developer with a strong interest in building intelligent, AI-powered web applications. I work extensively with <strong>LLMs</strong>, <strong>LangChain</strong>, and <strong>Gemini</strong> to create systems that enable contextual understanding, conversational interfaces, and real-time decision making.
-   My technical expertise spans <strong>Node.js</strong>, <strong>Express</strong>, <strong>ReactJS</strong>,<strong>FastAPI</strong> and <strong>MongoDB</strong>, with a solid foundation in <strong>DSA</strong> and scalable backend design. I enjoy solving complex problems and turning ideas into efficient, user-centric products.
+  `I am a <strong>full-stack</strong> developer with a strong interest in building intelligent, AI-powered web applications. I work extensively with <strong>LLMs</strong>, <strong>LangChain</strong>, and <strong>Gemini</strong> to create systems that enable contextual understanding, conversational interfaces, and real-time decision making.
+   My technical expertise spans <strong>Node.js</strong>, <strong>Express</strong>, <strong>ReactJS</strong>, <strong>FastAPI</strong> and <strong>MongoDB</strong>, with a solid foundation in <strong>DSA</strong> and scalable backend design. I enjoy solving complex problems and turning ideas into efficient, user-centric products.
    I am a competitive programmer and active campus contributor with 700+ solved problems, a <strong>LeetCode Knight</strong> rating, and a <strong>3-Star CodeChef</strong> profile. Beyond coding, I serve social cause through <strong>PICT NSS</strong>, lead community initiatives, and actively contribute to technical events and hackathons.`,
-   `🏆 Achievements include a <strong>LeetCode Knight</strong> rating (Top 5.5% globally), <strong>700+ problems solved</strong>, and a <strong>3-Star CodeChef</strong> profile.`
+  `🏆 Achievements include a <strong>LeetCode Knight</strong> rating (Top 5.5% globally), <strong>700+ problems solved</strong>, and a <strong>3-Star CodeChef</strong> profile.`,
 ];
-
 
 export const services = [
   {
     icon: "/images/icon-dev.svg",
     title: "Backend development",
-    description: "Engineering web platforms with real-time features, GenAI integration, and scalable cloud backends."
+    description:
+      "Engineering web platforms with real-time features, GenAI integration, and scalable cloud backends.",
   },
   {
     icon: "/images/microchip.png",
     title: "AI/ML Integration",
-    description: "Building intelligent features with AI and ML—knowledge base search with RAG or real-time anomaly detection in large datasets."
+    description:
+      "Building intelligent features with AI and ML—knowledge base search with RAG or real-time anomaly detection in large datasets.",
   },
   {
     icon: "/images/GenAI.png",
     title: "GenAI Solutions",
-    description: "Engineering next-gen tools with LLMs using Langchain and Langraph for smart content creation, automated insights, RAG pipelines, and adaptive user experiences."
+    description:
+      "Engineering next-gen tools with LLMs using Langchain and Langraph for smart content creation, automated insights, RAG pipelines, and adaptive user experiences.",
   },
 ];
 
@@ -50,56 +51,99 @@ export const education = [
     institution: "Pune Institute of Computer Technology",
     url: "https://pict.edu/",
     period: "2023– Present",
-    degree: "BE in Computer Engineering: CGPA- 9.71"
+    degree: "BE in Computer Engineering: CGPA- 9.71",
   },
   {
     institution: "Indirabai Lalwani Junior College, Jamner ",
     period: "2021– 2023",
-    degree: "Higher Secondary Certificate: HSC- 77%"
+    degree: "Higher Secondary Certificate: HSC- 77%",
   },
   {
     institution: "Indirabai Lalwani Madhyamic Vidyalay, Jamner",
     period: "2007– 2021",
-    degree: "Secondary School Certificate: SSC- 99%"
-  }
+    degree: "Secondary School Certificate: SSC- 99%",
+  },
 ];
 
 export const experience = [
-   {
+  {
     company: "Agribid Pvt. Ltd",
     url: "https://agribid.ai/index-dark.html",
     period: "Feb 2026",
     role: "Full Stack Developer-FastAPI",
-    description: "Working on admin-side RBAC backend development, designing secure APIs for role, permission, and user access management"
+    description:
+      "Working on admin-side RBAC backend development, designing secure APIs for role, permission, and user access management",
   },
   {
     company: "Cequence Security",
     url: "https://www.cequence.ai/",
     period: "Sep 2025– Jan 2026",
     role: "Full Stack Developer",
-    description: "Worked on testing MCP Server tools used in development environments like Windsurf ,Cursor and Claude IDEs.Developed an automated testing suite for validating MCP endpoints, improving reliability and efficiency in backend testing."
+    description:
+      "Worked on testing MCP Server tools used in development environments like Windsurf ,Cursor and Claude IDEs.Developed an automated testing suite for validating MCP endpoints, improving reliability and efficiency in backend testing.",
   },
   {
     company: "IEEE EMBS Society",
     url: "https://www.embs.org/",
     period: "June 2025 - July 2025",
     role: "AI-ML",
-    description: "Worked on Epillepsy and Sezuire Detection using Deep Learning and Neural Network.Build model with accuracy 93%. Added GenAI integration to analyze result generated by model"
-  }
+    description:
+      "Worked on Epillepsy and Sezuire Detection using Deep Learning and Neural Network.Build model with accuracy 93%. Added GenAI integration to analyze result generated by model",
+  },
 ];
 
 export const skills = [
-  "Python", "C++", "Java", "GenAI", "React", "Next.js", "Node.js","MySQL",
-  "MongoDB", "HTML5", "CSS3", "JavaScript" , "Express",  "FastAPI", "Postman",
-  "GitHub/GitLab", "NumPy", "Pandas","MatPlotLib","Langchain","Langraph","n8n"
+  "Python",
+  "C++",
+  "Java",
+  "GenAI",
+  "React",
+  "Next.js",
+  "Node.js",
+  "MySQL",
+  "MongoDB",
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "Express",
+  "FastAPI",
+  "Postman",
+  "GitHub/GitLab",
+  "NumPy",
+  "Pandas",
+  "MatPlotLib",
+  "Langchain",
+  "Langraph",
+  "n8n",
 ];
 
 export const techSlugs = [
-  "typescript", "react", "flutter", "mongodb", "html5", "css",
-  "javascript", "nodedotjs", "express", "flask", "fastapi",
-  "postgresql", "firebase", "postman", "vercel",
-  "mysql", "docker", "git", "jira", "github", "gitlab", "numpy",
-  "pandas", "cplusplus", "figma", "streamlit"
+  "typescript",
+  "react",
+  "flutter",
+  "mongodb",
+  "html5",
+  "css",
+  "javascript",
+  "nodedotjs",
+  "express",
+  "flask",
+  "fastapi",
+  "postgresql",
+  "firebase",
+  "postman",
+  "vercel",
+  "mysql",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "numpy",
+  "pandas",
+  "cplusplus",
+  "figma",
+  "streamlit",
 ];
 
 export const projectCategories = [
@@ -107,7 +151,7 @@ export const projectCategories = [
   "GenAI Powered",
   "Full Stack Project",
   "ML-Integrated Projects",
-  "Applications"
+  "Applications",
 ];
 
 export const projects = [
@@ -117,8 +161,17 @@ export const projects = [
     image: "/images/termsheet.png",
     github: "https://github.com/NitishP1710/hack-o-hire",
     liveUrl: "",
-    description: "Term sheets can come in various formats, including unstructured formats such as emails, chats, and messages. They can also be in structured formats like Word documents, PDFs, and Excel spreadsheets Optical Character Recognition (OCR): This technology can be used to extract text from images or scanned documents",
-    techStack: ["React", "Node.js", "MongoDB", "Open CV","Python", "Gemini API", "Express"]
+    description:
+      "Term sheets can come in various formats, including unstructured formats such as emails, chats, and messages. They can also be in structured formats like Word documents, PDFs, and Excel spreadsheets Optical Character Recognition (OCR): This technology can be used to extract text from images or scanned documents",
+    techStack: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Open CV",
+      "Python",
+      "Gemini API",
+      "Express",
+    ],
   },
   {
     title: "Khaugalli:Agribid Business requirement",
@@ -126,8 +179,9 @@ export const projects = [
     image: "/images/khaugalli.png",
     github: "https://github.com/agribid-agritech/khaugalli-api",
     liveUrl: "",
-    description: "Developed a scalable food-tech admin platform that centrally manages restaurants, orders, delivery partners, combos, and dynamic pricing rules. Implemented hierarchical rule evaluation and automated fee application to eliminate manual errors and ensure pricing transparency",
-    techStack: ["React", "Next.js", "FasApi", "PostgreSQL"]
+    description:
+      "Developed a scalable food-tech admin platform that centrally manages restaurants, orders, delivery partners, combos, and dynamic pricing rules. Implemented hierarchical rule evaluation and automated fee application to eliminate manual errors and ensure pricing transparency",
+    techStack: ["React", "Next.js", "FasApi", "PostgreSQL"],
   },
   {
     title: "Portfolio",
@@ -135,8 +189,9 @@ export const projects = [
     image: "/images/Portfolio.png",
     github: "https://github.com/NitishP1710/Nitish_portfolio",
     liveUrl: "https://nitish-portfolio-sepia.vercel.app/",
-    description: "Modern personal portfolio website with smooth animations, particle background, and responsive design showcasing projects and skills.",
-    techStack: ["React", "Vite", "Tailwind CSS", "Framer Motion"]
+    description:
+      "Modern personal portfolio website with smooth animations, particle background, and responsive design showcasing projects and skills.",
+    techStack: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
   },
   {
     title: "Epillepsy and Sezuire Detection",
@@ -144,8 +199,9 @@ export const projects = [
     image: "/images/ml.png",
     github: "https://github.com/NitishP1710/Sezuire-and-Epilepsy-Detection",
     liveUrl: "",
-    description: "Deep Learning CNN model to detect neurological disorder like epilepsy and sezuire detection",
-    techStack: ["Python", "TensorFlow", "Flask", "Pandas", "Data profiling"]
+    description:
+      "Deep Learning CNN model to detect neurological disorder like epilepsy and sezuire detection",
+    techStack: ["Python", "TensorFlow", "Flask", "Pandas", "Data profiling"],
   },
   // {
   //   title: "Tactical Trends",
@@ -205,10 +261,12 @@ export const projects = [
     title: "Youtube Video Assistant",
     category: "genai powered",
     image: "/images/Youtube_Assistant.png",
-    github: "https://github.com/NitishP1710/Langchain/tree/main/YoutuvbeChatbot",
+    github:
+      "https://github.com/NitishP1710/Langchain/tree/main/YoutuvbeChatbot",
     liveUrl: "",
-    description: "Chrome Extension that extracts YouTube video IDs from URLs, fetches transcripts automatically, and enables conversational Q&A over video content usingGemini LLM",
-    techStack: ["HTML","Javascript","Python","LangChain","Gemini API"]
+    description:
+      "Chrome Extension that extracts YouTube video IDs from URLs, fetches transcripts automatically, and enables conversational Q&A over video content usingGemini LLM",
+    techStack: ["HTML", "Javascript", "Python", "LangChain", "Gemini API"],
   },
   {
     title: "FARMS",
@@ -216,11 +274,11 @@ export const projects = [
     image: "/images/FARMS.png",
     github: "https://github.com/kalpeshshirsath11/Farms_frontend",
     liveUrl: "https://farms-glmv.onrender.com/",
-    description: "Digital marketplace connecting farmers directly with consumers, eliminating middlemen and ensuring fair prices for agricultural products.Enable farmers yeild demand forcasting and reduce transport cost",
-    techStack: ["React", "Node.js", "MongoDB", "Express", "Haversson Distance"]
-  }
+    description:
+      "Digital marketplace connecting farmers directly with consumers, eliminating middlemen and ensuring fair prices for agricultural products.Enable farmers yeild demand forcasting and reduce transport cost",
+    techStack: ["React", "Node.js", "MongoDB", "Express", "Haversson Distance"],
+  },
 ];
 
-export const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.576189831728!2d73.84825867428687!3d18.45754208262385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2sSCTR'S%20Pune%20Institute%20of%20Computer%20Technology!5e0!3m2!1sen!2sin!4v1744478939032!5m2!1sen!2sin";
-
-
+export const mapEmbedUrl =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.576189831728!2d73.84825867428687!3d18.45754208262385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2sSCTR'S%20Pune%20Institute%20of%20Computer%20Technology!5e0!3m2!1sen!2sin!4v1744478939032!5m2!1sen!2sin";

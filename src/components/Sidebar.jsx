@@ -6,10 +6,10 @@ import {
   IoChevronDown,
   IoLogoGithub,
   IoLogoLinkedin,
-  IoLogoInstagram,
   IoLogoMedium,
   IoLogoCodepen,
 } from "react-icons/io5";
+import { SiLeetcode, SiCodechef, SiCodeforces } from "react-icons/si";
 import { useState } from "react";
 import { personaInfo } from "../data/portfolioData";
 
@@ -37,9 +37,37 @@ const Sidebar = () => {
             <h1 className="text-white-2 text-[17px] md:text-[26px] font-medium tracking-tight mb-2 md:mb-4 whitespace-nowrap">
               {personaInfo.name}
             </h1>
-            <p className="text-white-1 bg-onyx text-[11px] md:text-[12px] font-light w-max px-3 py-1 rounded-lg mx-auto lg:mx-auto">
+            <p className="text-white-1 bg-onyx text-[11px] md:text-[12px] font-light w-max px-3 py-1 rounded-lg mx-auto lg:mx-auto mb-3 md:mb-4">
               {personaInfo.title}
             </p>
+            
+            {/* Social Links */}
+            <ul className="flex justify-center items-center gap-3 md:gap-4">
+              <SocialLink
+                href={personaInfo.social.github}
+                icon={<IoLogoGithub />}
+              />
+              <SocialLink
+                href={personaInfo.social.linkedin}
+                icon={<IoLogoLinkedin />}
+              />
+              <SocialLink
+                href={personaInfo.social.leetcode}
+                icon={<SiLeetcode />}
+              />
+              <SocialLink
+                href={personaInfo.social.codechef}
+                icon={<SiCodechef />}
+              />
+              <SocialLink
+                href={personaInfo.social.codeforces}
+                icon={<SiCodeforces />}
+              />
+              <SocialLink
+                href={personaInfo.social.medium}
+                icon={<IoLogoMedium />}
+              />
+            </ul>
           </div>
 
           {/* Toggle Button - Mobile/Tablet */}
@@ -107,32 +135,6 @@ const Sidebar = () => {
                   {personaInfo.location}
                 </address>
               }
-            />
-          </ul>
-
-          <div className="w-full h-px bg-jet my-4 md:my-8 lg:opacity-0" />
-
-          {/* Social Links */}
-          <ul className="flex justify-start lg:justify-center items-center gap-4 pl-2 pb-1">
-            <SocialLink
-              href={personaInfo.social.github}
-              icon={<IoLogoGithub />}
-            />
-            <SocialLink
-              href={personaInfo.social.linkedin}
-              icon={<IoLogoLinkedin />}
-            />
-            <SocialLink
-              href={personaInfo.social.instagram}
-              icon={<IoLogoInstagram />}
-            />
-            <SocialLink
-              href={personaInfo.social.medium}
-              icon={<IoLogoMedium />}
-            />
-            <SocialLink
-              href={personaInfo.social.leetcode}
-              icon=""
             />
           </ul>
         </div>
