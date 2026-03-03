@@ -20,8 +20,8 @@ export const personaInfo = {
 };
 
 export const aboutText = [
-   `I am a <strong>GenAI-focused</strong> full-stack developer with a strong interest in building intelligent, AI-powered web applications. I work extensively with <strong>LLMs</strong>, <strong>LangChain</strong>, and <strong>Gemini</strong> to create systems that enable contextual understanding, conversational interfaces, and real-time decision making.
-   My technical expertise spans <strong>Node.js</strong>, <strong>Express</strong>, <strong>ReactJS</strong>, and <strong>MongoDB</strong>, with a solid foundation in <strong>DSA</strong> and scalable backend design. I enjoy solving complex problems and turning ideas into efficient, user-centric products.
+   `I am a <strong>full-stack</strong> developer with a strong interest in building intelligent, AI-powered web applications. I work extensively with <strong>LLMs</strong>, <strong>LangChain</strong>, and <strong>Gemini</strong> to create systems that enable contextual understanding, conversational interfaces, and real-time decision making.
+   My technical expertise spans <strong>Node.js</strong>, <strong>Express</strong>, <strong>ReactJS</strong>,<strong>FastAPI</strong> and <strong>MongoDB</strong>, with a solid foundation in <strong>DSA</strong> and scalable backend design. I enjoy solving complex problems and turning ideas into efficient, user-centric products.
    I am a competitive programmer and active campus contributor with 700+ solved problems, a <strong>LeetCode Knight</strong> rating, and a <strong>3-Star CodeChef</strong> profile. Beyond coding, I serve social cause through <strong>PICT NSS</strong>, lead community initiatives, and actively contribute to technical events and hackathons.`,
    `🏆 Achievements include a <strong>LeetCode Knight</strong> rating (Top 5.5% globally), <strong>700+ problems solved</strong>, and a <strong>3-Star CodeChef</strong> profile.`
 ];
