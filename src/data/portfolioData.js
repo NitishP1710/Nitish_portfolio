@@ -50,17 +50,17 @@ export const education = [
     institution: "Pune Institute of Computer Technology",
     url: "https://pict.edu/",
     period: "2023– Present",
-    degree: "BE in Computer Engineering"
+    degree: "BE in Computer Engineering: CGPA- 9.71"
   },
   {
     institution: "Indirabai Lalwani Junior College, Jamner ",
     period: "2021– 2023",
-    degree: "Higher Secondary Certificate (HSC)"
+    degree: "Higher Secondary Certificate: HSC- 77%"
   },
   {
     institution: "Indirabai Lalwani Madhyamic Vidyalay, Jamner",
     period: "2007– 2021",
-    degree: "Secondary School Certificate (SSC)"
+    degree: "Secondary School Certificate: SSC- 99%"
   }
 ];
 
