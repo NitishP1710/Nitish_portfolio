@@ -20,16 +20,16 @@ const Sidebar = () => {
       <aside
         className={`relative bg-transparent backdrop-blur-sm rounded-[20px] p-4 shadow-[var(--shadow-1)] z-[1] mb-4 transition-all duration-500 overflow-hidden before:absolute before:inset-0 before:rounded-[20px] before:p-px before:bg-gradient-to-br before:from-jet before:to-transparent before:-z-1 before:content-['']
           ${isExpanded ? "max-h-[600px]" : "max-h-[112px]"}
-           md:max-h-[180px] md:mb-8 md:p-8
-           lg:sticky lg:top-[60px] lg:max-h-max lg:h-fit lg:pt-[60px] lg:min-w-[300px]`}
+           md:max-h-[180px] md:mb-8 md:p-8 lg:mb-0
+           lg:max-h-none lg:self-stretch lg:min-w-[300px]`}
       >
         {/* Basic Info */}
         <div className="relative flex items-center gap-4 md:gap-6 lg:flex-col">
-          <figure className="rounded-[20px] md:rounded-[30px] p-2 md:p-3">
+          <figure className="rounded-full p-2 md:p-3">
             <img
               src={personaInfo.avatar}
               alt={personaInfo.name}
-              className="w-20 md:w-[120px] lg:w-[150px] rounded-[16px] md:rounded-[24px]"
+              className="w-20 h-20 md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px] rounded-full object-cover"
             />
           </figure>
 
