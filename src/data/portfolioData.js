@@ -184,6 +184,16 @@ export const projects = [
     techStack: ["React", "Next.js", "FasApi", "PostgreSQL"],
   },
   {
+    title: "PICT QnA Forum",
+    category: "full stack project",
+    image: "/images/pict_qna.png",
+    github: "https://github.com/NitishP1710/PICT-QnA-forum.git",
+    liveUrl: "",
+    description:
+      "Developed a platform to Upload error ocuured during Developement and their solution",
+    techStack: ["React", "Next.js", "Express","Docker", "PostgreSQL"],
+  },
+  {
     title: "Portfolio",
     category: "full stack project",
     image: "/images/Portfolio.png",
