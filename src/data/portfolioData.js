@@ -7,7 +7,7 @@ export const personaInfo = {
   birthday: "Oct 17,2004",
   location: "PICT,Pune",
   resumeURL:
-    "https://drive.google.com/file/d/1AFP-aTcJgFY6qFG3ZqOTugJQUaL3rLbf/view?usp=drive_link",
+    "https://drive.google.com/file/d/12eaLmQw5_k-GH8v3ZgPWlKcX6IKYD9r1/view?usp=sharing",
   social: {
     github: "https://github.com/NitishP1710",
     leetcode: "https://leetcode.com/u/nitish-9371/",
