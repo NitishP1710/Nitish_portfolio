@@ -1,6 +1,11 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 /* Body background */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     transition: background 0.3s ease;

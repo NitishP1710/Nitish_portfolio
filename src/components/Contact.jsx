@@ -2,13 +2,14 @@ import { useState, useRef } from 'react';
 import { IoPaperPlane, IoCheckmarkCircle, IoAlertCircle } from 'react-icons/io5';
 import emailjs from '@emailjs/browser';
 import { mapEmbedUrl } from '../data/portfolioData';
+import { motion } from 'framer-motion';
 
 // EmailJS Configuration - Replace these with your actual IDs from emailjs.com
 const EMAILJS_SERVICE_ID = 'service_bjmta1t';     // e.g., 'service_xxxxxxx'
 const EMAILJS_TEMPLATE_ID = 'template_3k1afmn';   // e.g., 'template_xxxxxxx'
 const EMAILJS_PUBLIC_KEY = 'Ar3kaPxIn0ttN2qP6';     // e.g., 'xxxxxxxxxxxxxxx'
 
-const Contact = ({ isActive }) => {
+const Contact = () => {
   const formRef = useRef();
   const [formData, setFormData] = useState({
     fullname: '',
@@ -67,14 +68,19 @@ const Contact = ({ isActive }) => {
     }
   };
 
-  if (!isActive) return null;
-
   return (
-    <article className="animate-fade">
+    <motion.article 
+      id="contact"
+      className="py-16 md:py-24 border-t border-jet/50"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.5 }}
+    >
       <header>
-        <h2 className="text-white-2 text-2xl md:text-[32px] font-semibold capitalize relative pb-2 md:pb-5 mb-6 md:mb-8">
+        <h2 className="text-white-1 text-3xl md:text-4xl lg:text-5xl font-bold capitalize relative pb-4 mb-10 md:mb-12 drop-shadow-lg">
           Contact
-          <span className="absolute bottom-0 left-0 w-7.5 md:w-10 h-0.75 md:h-1.25 bg-linear-to-r from-orange-yellow to-vegas-gold rounded-full" />
+          <span className="absolute bottom-0 left-0 w-7.5 md:w-12 h-[3px] md:h-[5px] bg-gradient-to-r from-orange-yellow to-vegas-gold rounded-full" />
         </h2>
       </header>
 
@@ -174,7 +180,7 @@ const Contact = ({ isActive }) => {
           </button>
         </form>
       </section>
-    </article>
+    </motion.article>
   );
 };
 

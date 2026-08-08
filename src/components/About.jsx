@@ -1,11 +1,18 @@
+import { motion } from 'framer-motion';
 import { aboutText, services } from "../data/portfolioData";
 
-const About = ({ isActive }) => {
-  if (!isActive) return null;
+const About = () => {
   return (
-    <article className="animate-fade">
+    <motion.article 
+      id="about" 
+      className="pt-8 pb-16 md:pt-12 md:pb-24"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.5 }}
+    >
       <header>
-        <h2 className="text-white-2 text-2xl md:text-[32px] font-semibold capitalize relative pb-2 md:pb-4 mb-4 md:mb-5">
+        <h2 className="text-white-1 text-3xl md:text-4xl lg:text-5xl font-bold capitalize relative pb-4 mb-8 drop-shadow-lg">
           About me
           <span className="absolute bottom-0 left-0 w-7.5 md:w-10 h-0.75 md:h-1.25 bg-linear-to-r from-orange-yellow to-vegas-gold rounded-full" />
         </h2>
@@ -22,8 +29,8 @@ const About = ({ isActive }) => {
       </section>
 
       {/* Services Section */}
-      <section className="mb-8">
-        <h3 className="text-white-2 text-lg md:text-2xl font-medium capitalize mb-5">
+      <section className="mb-8 mt-12">
+        <h3 className="text-white-1 text-2xl md:text-3xl font-semibold capitalize mb-8 drop-shadow-md">
           What I'm doing
         </h3>
 
@@ -33,7 +40,7 @@ const About = ({ isActive }) => {
           ))}
         </ul>
       </section>
-    </article>
+    </motion.article>
   );
 };
 

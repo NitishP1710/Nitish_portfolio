@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { IoChevronDown, IoLogoGithub, IoOpenOutline, IoCloseOutline } from 'react-icons/io5';
 import { projects, projectCategories } from '../data/portfolioData';
+import { motion } from 'framer-motion';
 
-const Projects = ({ isActive }) => {
+const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [isSelectOpen, setIsSelectOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -36,14 +37,19 @@ const Projects = ({ isActive }) => {
     return () => window.removeEventListener('keydown', handleEsc);
   }, []);
 
-  if (!isActive) return null;
-
   return (
-    <article className="animate-fade">
+    <motion.article 
+      id="projects"
+      className="py-16 md:py-24 border-t border-jet/50"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.5 }}
+    >
       <header>
-        <h2 className="text-white-2 text-2xl md:text-[32px] font-semibold capitalize relative pb-2 md:pb-5 mb-6 md:mb-8">
+        <h2 className="text-white-1 text-3xl md:text-4xl lg:text-5xl font-bold capitalize relative pb-4 mb-10 md:mb-12 drop-shadow-lg">
           Projects
-          <span className="absolute bottom-0 left-0 w-7.5 md:w-10 h-0.75 md:h-1.25 bg-linear-to-r from-orange-yellow to-vegas-gold rounded-full" />
+          <span className="absolute bottom-0 left-0 w-7.5 md:w-12 h-[3px] md:h-[5px] bg-gradient-to-r from-orange-yellow to-vegas-gold rounded-full" />
         </h2>
       </header>
 
@@ -106,7 +112,7 @@ const Projects = ({ isActive }) => {
         <ProjectModal project={selectedProject} onClose={closeModal} />,
         document.body
       )}
-    </article>
+    </motion.article>
   );
 };
 

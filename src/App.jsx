@@ -1,35 +1,36 @@
-import { useState } from 'react'
 import { ThemeProvider } from "./context/ThemeContext";
-import Sidebar from "./components/Sidebar"
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Achievements from "./components/Achievements";
+import Contact from "./components/Contact";
 import ParticleBackground from "./components/ParticleBackground";
-
-// 
-
+import ScrollProgress from "./components/ScrollProgress";
+import BackToTop from "./components/BackToTop";
 
 function App() {
-  const [activePage,setActivePage] =useState('about')
   return (
     <ThemeProvider>
+      <ScrollProgress />
       <ParticleBackground />
-      <main className="relative z-10 mx-3 md:mx-auto my-4 md:mt-16 mb-20 md:mb-24 min-w-64.75 lg:max-w-300 lg:flex lg:justify-center lg:items-stretch lg:gap-6 lg:min-h-[calc(100vh-8rem)]">
-      <Sidebar />
-
-      <div className="relative w-full lg:min-w-[75%] lg:w-[75%] lg:mx-0 lg:flex lg:flex-col lg:self-stretch">
-        <Navbar activePage={activePage} setActivePage={setActivePage} />
-
-        <div className="relative bg-transparent backdrop-blur-sm rounded-[20px] p-4 md:p-8 shadow-(--shadow-1) z-1 lg:h-full lg:shadow-(--shadow-5) before:absolute before:inset-0 before:rounded-[20px] before:p-px before:bg-gradient-to-br before:from-jet before:to-transparent before:-z-1 before:content-['']">
-          <About isActive={activePage === 'about'} />
-          <Skills isActive={activePage === 'skills'} />
-          <Projects isActive={activePage === 'projects'} />
-          <Contact isActive={activePage === 'contact'} />
+      <Navbar />
+      
+      <main className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <div className="flex flex-col w-full">
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Achievements />
+          <Contact />
         </div>
-      </div>
-    </main>
+      </main>
+      
+      <BackToTop />
     </ThemeProvider>
   )
 }

@@ -7,7 +7,7 @@ export const personaInfo = {
   birthday: "Oct 17,2004",
   location: "PICT,Pune",
   resumeURL:
-    "https://drive.google.com/file/d/12eaLmQw5_k-GH8v3ZgPWlKcX6IKYD9r1/view?usp=sharing",
+    "https://drive.google.com/file/d/1JaOhNJ-appqmeTiUDO-dcyuElfEc2fst/view?usp=sharing",
   social: {
     github: "https://github.com/NitishP1710",
     leetcode: "https://leetcode.com/u/nitish-9371/",
@@ -22,7 +22,29 @@ export const aboutText = [
   `I am a <strong>full-stack</strong> developer with a strong interest in building intelligent, AI-powered web applications. I work extensively with <strong>LLMs</strong>, <strong>LangChain</strong>, and <strong>Gemini</strong> to create systems that enable contextual understanding, conversational interfaces, and real-time decision making.
    My technical expertise spans <strong>Node.js</strong>, <strong>Express</strong>, <strong>ReactJS</strong>, <strong>FastAPI</strong> and <strong>MongoDB</strong>, with a solid foundation in <strong>DSA</strong> and scalable backend design. I enjoy solving complex problems and turning ideas into efficient, user-centric products.
    I am a competitive programmer and active campus contributor with 700+ solved problems, a <strong>LeetCode Knight</strong> rating, and a <strong>3-Star CodeChef</strong> profile. Beyond coding, I serve social cause through <strong>PICT NSS</strong>, lead community initiatives, and actively contribute to technical events and hackathons.`,
-  `🏆 Achievements include a <strong>LeetCode Knight</strong> rating (Top 5.5% globally), <strong>700+ problems solved</strong>, and a <strong>3-Star CodeChef</strong> profile.`,
+];
+
+export const achievements = [
+  {
+    title: "LeetCode Knight",
+    description: "Achieved Knight rating on LeetCode (Top 5.5% globally).",
+    icon: "/images/icon-dev.svg"
+  },
+  {
+    title: "Amazon ML Summer School",
+    description: "Selected for Amazon ML Summer School among top 3k from 1.5 lakh students.",
+    icon: "/images/icon-dev.svg"
+  },
+  {
+    title: "Flipkart GRID 8.0 Semifinalist",
+    description: "Cleared Round 3 of Flipkart GRID 8.0. Semifinalist at Flipkart GRID 8.0.",
+    icon: "/images/icon-dev.svg"
+  },
+  {
+    title: "Runner Up at Codethon",
+    description: "Runner up at Codethon organized by NIT Kurukshetra.",
+    icon: "/images/icon-dev.svg"
+  }
 ];
 
 export const services = [
@@ -43,6 +65,12 @@ export const services = [
     title: "GenAI Solutions",
     description:
       "Engineering next-gen tools with LLMs using Langchain and Langraph for smart content creation, automated insights, RAG pipelines, and adaptive user experiences.",
+  },
+  {
+    icon: "/images/icon-dev.svg",
+    title: "Problem solving and optimization",
+    description:
+      "Solving complex algorithmic challenges with scalable and optimized solutions. Proven expertise through competitive programming and continuous optimization.",
   },
 ];
 
@@ -287,6 +315,16 @@ export const projects = [
     description:
       "Digital marketplace connecting farmers directly with consumers, eliminating middlemen and ensuring fair prices for agricultural products.Enable farmers yeild demand forcasting and reduce transport cost",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Haversson Distance"],
+  },
+  {
+    title: "Microservice self heal tool",
+    category: "genai powered",
+    image: "/microservice_image.png",
+    github: "https://github.com/NitishP1710/Micro_Service-_self_heal_tool.git",
+    liveUrl: "",
+    description:
+      "Detect failures from microservices, classify root cause via an LLM pipeline, and either auto-execute remediation (docker restart / scale) or surface suggested fixes to operators. Features a comprehensive dashboard for service analysis. Demonstrated with Docker-based Payment and Auth services.",
+    techStack: ["Docker", "Python", "Langchain", "Redis", "VectorDB", "Gemini API"],
   },
 ];
 

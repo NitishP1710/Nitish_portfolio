@@ -1,15 +1,16 @@
 import { useEffect, useRef } from 'react';
 import { IoBookOutline } from 'react-icons/io5';
 import { education, experience, skills, techSlugs } from '../data/portfolioData';
+import { motion } from 'framer-motion';
 
-const Skills = ({ isActive }) => {
+const Skills = () => {
   const cloudRef = useRef(null);
   const iconsRef = useRef([]);
   const mouseRef = useRef({ x: 0, y: 0 });
   const rotationRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
-    if (!isActive || !cloudRef.current) return;
+    if (!cloudRef.current) return;
 
     const radius = 160;
     const icons = iconsRef.current;
@@ -63,8 +64,8 @@ const Skills = ({ isActive }) => {
         const z2 = z1 * cosX + y * sinX;
 
         const scale = 0.6 + (z2 + radius) / (2 * radius);
-        const left = x1 + (cloudRef.current?.offsetWidth || 0) / 2 - 20;
-        const top = y1 + (cloudRef.current?.offsetHeight || 0) / 2 - 20;
+        const left = x1 + 200 - 15; // 200 is center of 400px, 15 is half of 30px icon
+        const top = y1 + 200 - 15;
 
         icon.style.transform = `translate(${left}px, ${top}px) scale(${scale})`;
         icon.style.zIndex = Math.floor(scale * 100);
@@ -80,28 +81,56 @@ const Skills = ({ isActive }) => {
       document.removeEventListener('mousemove', handleMouseMove);
       cancelAnimationFrame(animationId);
     };
-  }, [isActive]);
-
-  if (!isActive) return null;
+  }, []);
 
   return (
-    <article className="animate-fade">
+    <motion.article 
+      id="skills"
+      className="py-16 md:py-24 border-t border-jet/50"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.5 }}
+    >
       <header>
-        <h2 className="text-white-2 text-2xl md:text-[32px] font-semibold capitalize relative pb-2 md:pb-5 mb-6 md:mb-8">
-          Skills
-          <span className="absolute bottom-0 left-0 w-[30px] md:w-10 h-[3px] md:h-[5px] bg-gradient-to-r from-orange-yellow to-vegas-gold rounded-full" />
+        <h2 className="text-white-1 text-3xl md:text-4xl lg:text-5xl font-bold capitalize relative pb-4 mb-10 drop-shadow-lg">
+          Skills & Education
+          <span className="absolute bottom-0 left-0 w-[40px] md:w-12 h-[3px] md:h-[5px] bg-gradient-to-r from-orange-yellow to-vegas-gold rounded-full" />
         </h2>
       </header>
 
-      {/* Education */}
-      <TimelineSection title="Education" items={education} type="education" />
+      {/* Education & Article Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+        <TimelineSection title="Education" items={education} type="education" />
 
-      {/* Experience */}
-      <TimelineSection title="Experience" items={experience} type="experience" />
+        {/* Article Box */}
+        <div className="bg-transparent border border-jet rounded-2xl p-6 md:p-8 flex flex-col justify-center shadow-lg hover:border-orange-yellow transition-colors relative overflow-hidden h-fit mt-2">
+          {/* Decorative background gradient */}
+          <div className="absolute top-0 right-0 w-32 h-32 bg-orange-yellow/10 blur-[50px] rounded-full" />
+          
+          <h3 className="text-white-1 text-xl md:text-2xl font-semibold mb-2 relative z-10">
+            Featured Article
+          </h3>
+          <h4 className="text-orange-yellow text-lg font-medium mb-3 relative z-10">
+            Why Do Chatbots Forget Long Conversations?
+          </h4>
+          <p className="text-light-gray text-sm md:text-[15px] leading-relaxed mb-6 relative z-10">
+            An in-depth look at LLM context management, exploring the challenges of maintaining memory in conversational AI and strategies for optimizing context windows for more coherent and long-lasting interactions.
+          </p>
+          <a
+            href="https://medium.com/@patilnitish2004/why-do-chatbots-forget-long-conversations-1d81c422241c?sharedUserId=patilnitish2004"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-jet text-orange-yellow border border-orange-yellow/30 px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-orange-yellow hover:text-jet transition-all text-center w-fit relative z-10"
+          >
+            Read on Medium
+          </a>
+        </div>
+      </div>
 
       {/* Skills Tags */}
-      <section className="text-center mb-8">
-        <h3 className="text-white-2 text-lg md:text-2xl font-medium capitalize mb-5">
+      <section className="text-center mb-12 mt-16">
+        <h3 className="text-white-1 text-2xl md:text-3xl font-semibold capitalize mb-8 drop-shadow-md">
           Skills
         </h3>
         <div className="flex flex-wrap gap-3 justify-center mt-4">
@@ -136,18 +165,18 @@ const Skills = ({ isActive }) => {
           </div>
         </div>
       </section>
-    </article>
+    </motion.article>
   );
 };
 
 const TimelineSection = ({ title, items, type }) => (
-  <section className="mb-8">
-    <div className="flex items-center gap-4 mb-6">
-      <div className="relative bg-gradient-to-br from-jet to-transparent w-[30px] h-[30px] md:w-12 md:h-12 rounded-lg md:rounded-xl flex justify-center items-center text-base md:text-lg text-orange-yellow shadow-[var(--shadow-1)] z-[1]">
-        <span className="absolute inset-[1px] bg-transparent rounded-inherit -z-[1] rounded-lg md:rounded-xl" />
+  <section className="mb-12">
+    <div className="flex items-center gap-4 mb-8">
+      <div className="relative bg-gradient-to-br from-jet to-transparent w-[40px] h-[40px] md:w-12 md:h-12 rounded-xl flex justify-center items-center text-xl md:text-2xl text-orange-yellow shadow-lg z-[1]">
+        <span className="absolute inset-[1px] bg-transparent rounded-inherit -z-[1] rounded-xl" />
         <IoBookOutline />
       </div>
-      <h3 className="text-white-2 text-lg md:text-2xl font-medium">
+      <h3 className="text-white-1 text-2xl md:text-3xl font-semibold drop-shadow-md">
         {title}
       </h3>
     </div>
